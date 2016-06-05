@@ -46,10 +46,10 @@ void InsertSort(erray G)
 void BubbleSort(erray G)
 {
 	int m = G.length - 1;
-	int flag = 1;
+	int flag = 1;                            //flag 用来标记某一趟排序是否发生交换
 	while ((m > 0) && (flag == 1))
 	{
-		flag = 0;
+		flag = 0;                             //flag 置为0，如果本次排序没有发生交换，则不会执行下一趟排序
 		for (int j = 1; j <= m; j++)
 		{
 			if (G.r[j].key > G.r[j + 1].key)
